@@ -62,12 +62,12 @@ Retrieve kubeconfig:
 aws eks update-kubeconfig --region us-east-1 --name my- project-eks-cluster  
 kubectl get nodes 
 
-# Step 6: Create Kubernetes deployment.yaml and service.yaml
-    
+# Step 6: Create Kubernetes deployment.yaml
+deployment.yaml is created in the repository  
 Apply the deployment:  
 kubectl apply -f deployment.yaml  
 kubectl get svc  
-Step 7: Configure Jenkins Pipeline  
+Step 7: Configure Jenkins Pipeline 
 Install Required Plugins  
 Go to Jenkins Dashboard → Manage Jenkins → Manage Plugins and Install following plugins:  
 •	Pipeline  
@@ -78,7 +78,8 @@ Create a New Jenkins Pipeline Job
 1.	Go to Jenkins → New Item → Pipeline.  
 2.	In the Pipeline Definition→ Job Configuration →Pipeline script from Source Code Management → Git, and ensure that the branch specified matches the branch in your GitHub repository.  
 3.	Branches to build -> refs/remotes/origin/master  
-4.	Script Path-> Jenkinsfile  
+4.	Script Path-> Jenkinsfile
+The Jenkinsfile is also created in the repository.  
 # Step 8:  Save this  Jenkins Pipeline Script in Github  
 
 # Step 9: Trigger the Pipeline
